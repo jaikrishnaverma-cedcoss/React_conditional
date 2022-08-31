@@ -1,8 +1,14 @@
 
 .App{
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%
+}
+.flex
+{
+  display: flex;
+  justify-content: space-around;
 }
 #inpu{
 width: 100%;
@@ -43,4 +49,22 @@ button{
 button:focus{
   border: none;
   outline: none;
+}
+.box-red {
+  font-family: cursive, sans-serif;
+  background-color: #d50055;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 20px 23px #ff00669a;
+  margin-top: 100px;
+}
+.box-blue {
+  font-family: cursive, sans-serif;
+  background-color: #5e00f5;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 20px 23px #6200ff9d;
+  margin-top: 100px;
 }
