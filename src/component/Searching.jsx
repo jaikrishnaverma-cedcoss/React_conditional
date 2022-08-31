@@ -11,7 +11,7 @@ class Searching extends Component {
 
             this.state.search = this.state.data.filter((item) => {
                 return (
-                    item.toLowerCase().includes(this.state.value)
+                    item.toLowerCase().startsWith(this.state.value)
                 );
             })
             this.setState({ search: this.state.search })
