@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Searching from './Searching';
 import Changediv from './Changediv';
+import ThemeDiv from './ThemeDiv';
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -17,6 +18,7 @@ class Main extends Component {
             <Searching />
             <button style={{marginTop:"100px",borderRadius:"5px",border:"2px solid #ffdb00",backgroundColor:"yellow",padding:"10px 20px"}} onClick={this.changeBtn}>{`From Main Componenet: ${this.state.btnval}`}</button>
             <Changediv colo={this.state.btnval}/>
+            <ThemeDiv />
             </>
          );
     }
